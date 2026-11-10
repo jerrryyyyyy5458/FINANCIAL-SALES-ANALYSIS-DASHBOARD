@@ -1,14 +1,14 @@
 # Financial Sales Analysis Dashboard
 
-An interactive Power BI report for exploring sales performance across products, customer segments, countries, and time. The report is designed to help stakeholders compare revenue and profit patterns and narrow the view with interactive filters.
+An interactive Power BI report for exploring sales performance across products, customer segments, countries, and time. It brings key performance indicators and visual comparisons together in one view, with filters for product and country.
 
 ## Objectives
 
-- Summarize overall sales performance in a clear dashboard.
+- Summarize overall sales performance.
 - Compare sales across countries and customer segments.
 - Review product level profitability.
-- Explore monthly sales trends over time.
-- Make the report easy to filter and use for business discussions.
+- Explore monthly sales trends.
+- Support quick, interactive business analysis.
 
 ## Dashboard features
 
@@ -19,16 +19,18 @@ An interactive Power BI report for exploring sales performance across products, 
 - Sales by segment donut chart.
 - Interactive country and product slicers.
 
-## Key insights
+## Key insights shown
 
-The report layout supports analysis of:
+- The Total Sales card displays **$118.726M**.
+- The monthly trend rises to a high point in November, then drops in December.
+- The product profit chart ranks Paseo highest, followed by VTT and Amarilla.
+- The country chart compares Canada, France, Germany, Mexico, and the United States of America.
 
-- Which countries contribute the most sales.
-- How sales are distributed across segments.
-- Which products contribute more or less profit.
-- How sales change over the monthly timeline.
+These values describe the supplied dashboard view and may change when slicers or data are changed.
 
-No numeric findings are stated here because the report's embedded data has not been reviewed for public sharing. Add verified, non-sensitive findings after confirming the dataset is safe to publish.
+## Screenshot
+
+![Financial Sales Analysis Dashboard overview](screenshots/dashboard-overview.png)
 
 ## Tools
 
@@ -43,23 +45,19 @@ Financial-Sales-Analysis-Dashboard/
 ├── .gitignore
 └── screenshots/
     ├── README.md
-    └── dashboard-overview.png   # Add a sanitized screenshot here
+    └── dashboard-overview.png
 ```
-
-## Screenshots
-
-Add sanitized dashboard images to [`screenshots/`](screenshots/). Remove customer names, confidential figures, or other sensitive information before sharing. A full-page overview is a good starting point.
 
 ## Data and privacy
 
-The PBIX file is intentionally excluded from Git by default because Power BI files can contain imported data, credentials, or other private information. Before publishing the PBIX, review its data model, Power Query source settings, and report pages; remove private information and credentials. The original PBIX remains outside this repository and has not been changed.
+The source PBIX is kept out of this public repository because it contains an embedded data model that has not been reviewed for sensitive information. The original PBIX file has not been modified. The screenshot is included as supplied.
 
-If you publish a sanitized PBIX, place a reviewed copy in this project folder and update `.gitignore` deliberately. GitHub currently rejects individual files over 100 MB; this dashboard's source PBIX is approximately 0.8 MB, but size does not establish that its contents are safe to publish.
+The source PBIX is approximately 0.8 MB, below GitHub's 100 MB per-file limit. That file size does not establish that its embedded data is safe to publish.
 
 ## Open the report
 
-After a reviewed PBIX has been added to the repository, open it in Microsoft Power BI Desktop. Data refresh may require configuring an approved public or local data source.
+To open the dashboard, use the original `Financial Sales Dashboard.pbix` in Microsoft Power BI Desktop. The PBIX can be added to a public repository after its embedded data and source settings have been reviewed for sensitive information.
 
 ## License
 
-No license has been selected. Add a `LICENSE` file only after deciding how you want others to use this portfolio project.
+No license has been selected. Add a `LICENSE` file if you want to specify how others may use this project.
