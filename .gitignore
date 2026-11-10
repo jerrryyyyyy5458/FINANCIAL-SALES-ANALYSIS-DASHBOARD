@@ -1,0 +1,17 @@
+# Power BI files and data
+*.pbix
+*.pbit
+*.pbip/DataModel/**
+*.pbi/**
+
+# Credentials and local configuration
+.env
+*.env
+*.credentials
+*.secret
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
